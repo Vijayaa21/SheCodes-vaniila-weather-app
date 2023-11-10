@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+  background-color: #e8d8fc;
+}
+#app {
+  padding-top: 20px;
+  margin: 80px 95px;
+  background-color: #f7eefa;
+  border-radius: 12px;
+  border: 3px solid whitesmoke;
+  box-shadow: 2px 2px 20px grey;
+  display: block;
+}
+button {
+  background-color: #d440fc;
+}
+form {
+  margin-left: 50px;
+}
+h3 {
+  font-family: "Merienda", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500px;
+  line-height: 45px;
+  margin-left: 30px;
+  font-weight: bolder;
+  font-size: 35px;
+}
+li {
+  list-style: none;
+  color: grey;
+  font-weight: 20px;
+}
+.style {
+  color: rgb(143, 35, 125);
+}
+img {
+  width: 100px;
+  vertical-align: px;
+}
+#temp {
+  font-size: 60px;
+  font-family: "Merienda", cursive;
+  font-family: "Open Sans", sans-serif;
+}
+#celcius {
+  font-size: 22px;
+  vertical-align: 30px;
+}
+hr {
+  color: #8f6e8f;
+}
+h5 {
+  font-size: 10px;
+  text-align: center;
+  color: purple;
+}
