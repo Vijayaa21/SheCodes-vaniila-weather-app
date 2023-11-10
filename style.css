@@ -3,21 +3,24 @@ body {
   background-color: #e8d8fc;
 }
 #app {
-  padding-top: 20px;
-  margin: 50 auto;
+  padding: 30px;
+  display: block;
+  margin: 45px auto;
   background-color: #f7eefa;
   border-radius: 12px;
   border: 3px solid whitesmoke;
   box-shadow: 2px 2px 20px grey;
-  display: block;
-  width:50%;
+  width: 55%;
 }
-button {
-  background-color: #d440fc;
+.btn {
+  background-color: #ba1cf2;
+  border: 1px solid #ba1cf2;
+  transition: 0.2ms;
 }
-form {
-  margin-left: 50px;
-}
+.btn:hover {
+  background-color:#e8d8fc; 
+  border: 1px solid #e8d8fc;
+  color: #ba1cf2;
 h3 {
   font-family: "Merienda", cursive;
   font-family: "Open Sans", sans-serif;
