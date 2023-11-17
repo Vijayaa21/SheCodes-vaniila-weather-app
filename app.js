@@ -20,12 +20,6 @@ if (miN < 10) {
 }
 daY.innerHTML = `${daYes}    ${houR}:${miN}`;
 
-function searchCity(city) {
-  let apiKey = "6b4f3dae57b3ed708ofd511b96092atd";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
-
-  axios.get(apiUrl).then(showWeather);
-}
 function showWeather(response) {
   document.querySelector("h3").innerHTML = response.data.city;
   document.querySelector("#temp").innerHTML = Math.round(
@@ -45,11 +39,19 @@ function showWeather(response) {
   getForecast(response.data.city);
 }
 
+function searchCity(city) {
+  let apiKey = "6b4f3dae57b3ed708ofd511b96092atd";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+
+  axios.get(apiUrl).then(showWeather);
+}
+
 function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#floatingInput").value;
   searchCity(city);
 }
+
 function showPosition(position) {
   let apiKey = "6b4f3dae57b3ed708ofd511b96092atd";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${position.coords.longitude}&lat=${position.coords.latitude}&key=${apiKey}`;
