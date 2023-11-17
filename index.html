@@ -3,6 +3,7 @@
   <head>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +22,7 @@
               <button type="submit" class="btn btn-primary mb-3">Submit</button>
             </div>
             <div class="col-auto">
-            <button type= "submit" class="btn btn-primary mb-3" > Current Location </button>
+            <button type= "submit" class="btn btn-primary mb-3" id="current" > Current Location </button>
             </div>
           </form>
           <br>
@@ -36,8 +37,9 @@
             <li> Wind: <span class = "style"><span id="wind"></span>km/h </span></li>
         </div>
         <div class="col">
-          <img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png" alt="weather-icon">
-          <span id="temp"> </span>
+          <span id="icon">
+            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt=""> 
+          </span><span id="temp"> </span>
             <span class="unit">
                 <a href="#" id="celcius"> °C </a>
               </span>
@@ -49,7 +51,7 @@
       <div class = "row"></div>
     </div>
     <hr>
-    <h5> This project is coded by <a href= ""> Vijaya Mishra </a> is <a href="https://github.com/Vijayaa21/SheCodes-vaniila-weather-app/tree/main" > open-sourced on github </a> and hosted by <a href="">
+    <h5> This project is coded by <a href= ""> Vijaya Mishra </a> is <a href="" > open-sourced on github </a> and hosted by <a href="">
       Netlify<a> </h3>
     </div>
     <script src="app.js"> </script>
